@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+.resume {
+    border: 1px solid gray;
+    margin: 80px;
+    margin-left: 420px;
+    margin-right: 420px;
+}
+ul {
+    text-align: left;
+    margin-left: 10px;
+}
+.index {
+    border: 1px solid gray;
+    margin: 80px;
+    margin-left: 420px;
+    margin-right: 420px;
+}
+.foot {
+    margin-top: 110px;
+}
+.imge {
+    border: 2px solid black;
+    width: 380px;
+    height: 260px;
+}
+.title {
+    text-decoration: none;
+}

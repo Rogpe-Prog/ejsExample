@@ -1,0 +1,41 @@
+<%- include('header') %>
+
+<main class="resume">
+    <h1><a class="title" href="/"><%= modulo.title %></a></h1>
+    <p>Welcome to my <strong><%= modulo.title %></strong></p>
+    <strong><%= modulo.name %></strong>
+    <p><%= modulo.position %></p>
+    <p><%= modulo.description %></p>
+    <ul>
+        <% modulo.experience.map(experience => { %>
+        <li>
+            <div>
+                <strong><%= experience.company %>:</strong>
+                <strong><%= experience.office %></strong>
+                <br>
+                <span><%= experience.description %></span>
+            </div>
+        </li>
+        <% }) %>
+    </ul>
+    <ul>
+    <% modulo.education.map(education => { %>
+        <li>
+            <div>
+                <strong><%= education.instituiton %></strong>
+                <br>
+                <span><%= education.description %></span>
+            </div>
+        </li>
+    <% }) %>
+    </ul>
+    <ul>
+        <p><strong>Skills</strong></p>
+        <% modulo.skills.map(skill => { %>
+            <li><%= skill %></li>
+        <% }) %>
+    </ul>
+
+</main> 
+
+<%- include('footer') %>   
