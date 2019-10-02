@@ -19,7 +19,7 @@ module.exports = {
     ],
     education: [
         {
-        instituiton: 'World Life',
+        institution: 'World Life',
         description: 'Code and Code'
         }
     ],
